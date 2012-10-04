@@ -17,7 +17,10 @@
 		5439CAF1161D350E00D61A4C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5439CAD7161D350D00D61A4C /* UIKit.framework */; };
 		5439CAF2161D350E00D61A4C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5439CAD9161D350D00D61A4C /* Foundation.framework */; };
 		5439CAFA161D350E00D61A4C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5439CAF8161D350E00D61A4C /* InfoPlist.strings */; };
-		5439CAFD161D350E00D61A4C /* cmpdirTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439CAFC161D350E00D61A4C /* cmpdirTests.m */; };
+		5439CB0C161D354C00D61A4C /* MyUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439CB07161D354C00D61A4C /* MyUtility.m */; };
+		5439CB0D161D354C00D61A4C /* Directory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439CB08161D354C00D61A4C /* Directory.m */; };
+		5439CB0E161D354C00D61A4C /* StandardPaths.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439CB0B161D354C00D61A4C /* StandardPaths.m */; };
+		5439CB11161D357900D61A4C /* cmpdirTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439CB0F161D357900D61A4C /* cmpdirTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +48,14 @@
 		5439CAEF161D350E00D61A4C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		5439CAF7161D350E00D61A4C /* cmpdirTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cmpdirTests-Info.plist"; sourceTree = "<group>"; };
 		5439CAF9161D350E00D61A4C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5439CAFB161D350E00D61A4C /* cmpdirTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cmpdirTests.h; sourceTree = "<group>"; };
-		5439CAFC161D350E00D61A4C /* cmpdirTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cmpdirTests.m; sourceTree = "<group>"; };
+		5439CB06161D354C00D61A4C /* MyUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUtility.h; sourceTree = "<group>"; };
+		5439CB07161D354C00D61A4C /* MyUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUtility.m; sourceTree = "<group>"; };
+		5439CB08161D354C00D61A4C /* Directory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Directory.m; sourceTree = "<group>"; };
+		5439CB09161D354C00D61A4C /* Directory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Directory.h; sourceTree = "<group>"; };
+		5439CB0A161D354C00D61A4C /* StandardPaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandardPaths.h; sourceTree = "<group>"; };
+		5439CB0B161D354C00D61A4C /* StandardPaths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StandardPaths.m; sourceTree = "<group>"; };
+		5439CB0F161D357900D61A4C /* cmpdirTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cmpdirTests.m; sourceTree = "<group>"; };
+		5439CB10161D357900D61A4C /* cmpdirTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmpdirTests.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +115,12 @@
 		5439CADD161D350D00D61A4C /* cmpdir */ = {
 			isa = PBXGroup;
 			children = (
+				5439CB06161D354C00D61A4C /* MyUtility.h */,
+				5439CB07161D354C00D61A4C /* MyUtility.m */,
+				5439CB08161D354C00D61A4C /* Directory.m */,
+				5439CB09161D354C00D61A4C /* Directory.h */,
+				5439CB0A161D354C00D61A4C /* StandardPaths.h */,
+				5439CB0B161D354C00D61A4C /* StandardPaths.m */,
 				5439CAE6161D350E00D61A4C /* AppDelegate.h */,
 				5439CAE7161D350E00D61A4C /* AppDelegate.m */,
 				5439CADE161D350D00D61A4C /* Supporting Files */,
@@ -127,8 +142,8 @@
 		5439CAF5161D350E00D61A4C /* cmpdirTests */ = {
 			isa = PBXGroup;
 			children = (
-				5439CAFB161D350E00D61A4C /* cmpdirTests.h */,
-				5439CAFC161D350E00D61A4C /* cmpdirTests.m */,
+				5439CB10161D357900D61A4C /* cmpdirTests.h */,
+				5439CB0F161D357900D61A4C /* cmpdirTests.m */,
 				5439CAF6161D350E00D61A4C /* Supporting Files */,
 			);
 			path = cmpdirTests;
@@ -251,6 +266,9 @@
 			files = (
 				5439CAE4161D350E00D61A4C /* main.m in Sources */,
 				5439CAE8161D350E00D61A4C /* AppDelegate.m in Sources */,
+				5439CB0C161D354C00D61A4C /* MyUtility.m in Sources */,
+				5439CB0D161D354C00D61A4C /* Directory.m in Sources */,
+				5439CB0E161D354C00D61A4C /* StandardPaths.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5439CAFD161D350E00D61A4C /* cmpdirTests.m in Sources */,
+				5439CB11161D357900D61A4C /* cmpdirTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
