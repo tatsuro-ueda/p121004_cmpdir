@@ -29,6 +29,8 @@
 
 - (NSArray *)files
 {
-    return [MyUtility list:_name];
+    NSArray *array = [MyUtility list:_name];
+    array = [array sortedArrayUsingSelector:@selector(compare:)];
+    return array;
 }
 @end
